@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#373434">
+    <meta charset="utf-8" />
+    <link href="main.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="https://img.icons8.com/ios-filled/50/000000/globe-earth.ico" sizes="128x128" />
+    
+    
+
+</head>
+<body>
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 1</title>
+
+</head>
+<body>
+<header>
+    <div id="logo" onclick="slowScroll('#top')">
+        <span>DotaCode</span>
+    </div>
+    <div id="about">
+        <a href="#" title="Возможности" onclick="slowScroll('#main')">Услуги</a>
+        <a href="#" onclick="slowScroll('#overview')" title="Преимущества">Преимущества</a>
+        <a href="#" onclick="slowScroll('#contacts')" title="Связь">Связь</a>
+        <a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
+    </div>
+</header>
+
+<div id="top">
+    <h1>Dota 2</h1>
+    <h3>Boost аккаунтов</h3>
+</div>
+
+<div id="main">
+    <div class="intro">
+        <h2>Наши услуги помогут вам!</h2>
+        <span>Лучшее качество услуг на рынке!</span>
+    </div>
+    <div class="text">
+        <ul>
+            <li>Калибровка аккаунта</li>
+            <li>Boost рейтинга</li>
+            <li>Отыгрыш 100 часов</li>
+            <li>Калибровка с привязкой</li>
+        </ul>
+
+    </div>
+</div>
+
+<div id="overview">
+    <h2>Преимущества</h2>
+    <h4>у нас всё лучшее</h4>
+
+    <div class="img">
+        <img src="https://zoneg.ru/wp-content/uploads/kak-igrat-do-kalibrovki-dota-2_11.jpg" alt="">
+        <span>Гарантированный 90%+ WinRate</span>
+    </div>
+    <div class="img">
+        <img src="https://i.imgur.com/IdlQIp2.jpg" alt="">
+        <span>Лучшие цены на любом рейтинге</span>
+    </div>
+</div>
+
+<div id="contacts">
+    <center><h5>Обратная связь</h5></center>
+    <form id="form_input">
+        <label for="name">Имя <span>*</span></label><br>
+        <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+        <label for="email">Ваша почта <span>*</span></label><br>
+        <input type="email" placeholder="Введите email" name="email" id="email"><br>
+        <label for="message">Сообщение <span>*</span></label><br>
+        <textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
+        <div id="mess_send" class="btn">Отправить</div>
+    </form>
+</div>
+
+<div id="faq">
+    <div>
+        <span class="title">Оплата</span><br>
+        <span class="heading">Как будет проходит оплата?</span>
+        <p>Вся сумма оплачивается предоплатой</p>
+        <span class="heading">Как отправлять деньги?</span>
+        <p>Оплату можно произвести с любого банка мира</p>
+    </div>
+    <div>
+        <span class="title">Информация</span><br>
+        <span class="heading">Что входит в услуги сервиса</span>
+        <p>В наши услуги входит поднятие рейтинга, калибровка, рекалибровка, продажа аккаунтов.</p>
+        <span class="heading">Насколько вам можно доверять?</span>
+        <p>Мы - недавно открывшаяся компания, а с нами уже было совершено более сотни сделок и услуг, у нас лучшие бустеры. Это можно подтвердить отзывами клиентов.</p>
+    </div>
+    <div>
+        <span class="title">Гарантии</span><br>
+        <span
+                XHTML namespace
+                www.w3.org
+                class="heading">Какие гарантии есть</span>
+        <p>Гарантия отличного качества. В случае неудачной услуги мы вернем вам деньги</p>
+        <span class="heading">Можно ли будет отменить услугу после оплаты до завершения?</span>
+        <p>Да, можно, но мы не вернем деньги за часть сделанной работы </p>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+function slowScroll(id) {
+$('html, body').animate({
+scrollTop: $(id).offset().top
+}, 500);
+}
+
+$(document).on("scroll", function () {
+if ($(window).scrollTop() === 0)
+$("header").removeClass("fixed");
+else
+$("header").attr("class", "fixed");
+});
+ 
+</script>
+</body>
+</html>
+

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+body{
+	background-color: rgba(0,0,0,0.25);
+	font-family:"Be Vietnam Pro";
+	font-weight:300;
+	font-size:16px;
+	color:#555;
+
+	overflow-x: hidden;
+	-webkit-font-smoothing:antialiased;
+	-webkit-overflow-scrolling:touch;
+	margin-top:70px;
+}
+h3,h4{
+	font-family:"Outfit";
+	font-weight:300;
+	color:#333;
+
+}
+
+
+a{
+	color:#ff7878;
+}
+
+.containery{
+	width: 800px;
+	height:500px;
+	margin: auto;
+	padding: 40px 0;
+	position: relative;
+}
+
+.block{
+height: 100%;
+box-shadow:0 5px 45px rgba(0,0,0,0.2);
+display: flex;
+align-items: center;
+}
+.block_item{
+	width: 50%;
+	text-align: center;
+}
+
+.block-item_btn{
+	border: none;
+	cursor: pointer;
+	padding: 10px 20px;
+	background-color: #fff;
+	color: #ff7878;
+	font-size: 16px;
+	font-weight: 500;
+}
+.form-box{
+	background-color: #2d2d2d;
+	height: 100%;
+	width: 50%;
+	box-shadow: 0 5px 45px rgba(0,0,0,0.25);
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 1000;
+	transition: 0.5s ease-in-out;
+display: flex;
+align-items: center;
+overflow: hidden;
+}
+
+.form-box.active{
+	left:50%;
+}
+
+.form{
+	width: 100%;
+	padding: 50px;
+	font-size: 16px;
+	position: absolute;
+	transition: 0.5s;
+	}
+
+.form_signin{
+left:0;
+transition-delay: 0s;
+}
+
+.form_signup{
+left:100%;
+transition-delay: 0s;
+}
+
+.form-box.active .form_signin{
+	left:-100%;
+	transition-delay: 0s;
+}
+
+.form-box.active .form_signup{
+	left:0;
+	transition-delay: 0.25s;
+
+}
+
+	.form_title{
+		font-weight: 500;
+		color:#ff7878;
+	}
+
+	.form_input{
+	width: 100%;
+	padding: 10px;
+	font-size: inherit;
+	}
+
+	.form_btn{
+		border:none;
+		cursor:pointer;
+		font-size: inherit;
+		background-color: #ff7878;
+		color: #fff;
+		padding: 5px 20px;
+	}
+
+.form_btn_signup{
+	background-color:#ff7878;
+}
+
+@media (max-width:992px){
+	.containery{
+		max-width: 400px;
+		height: 650px;
+		padding: 0;
+		margin: 0 20px;
+		margin: inherit;
+	}
+
+	.block{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.block_item{
+		width: 100%;
+		padding: 30px 0;
+	}
+
+	.form-box{
+		width: 100%;
+		height: 500px;
+		top:0;
+	}
+	.form-box.active{
+		top:150px;
+		left:0;
+	}
+}
+
+.wrapper {
+	padding: 30px;
+}
+@keyframes fall {
+  to {
+    transform: translateY(105vh);
+  }
+}
